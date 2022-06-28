@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Eswara Rohan</title>
+        <style>
+
+            .red{
+            background-color:rgb(247, 13, 13);
+            color:rgb(40, 2, 2);
+            }
+
+            .blue{
+                background-color:blue;
+                color:aliceblue;
+            }
+
+            .test{
+                margin:10px;
+                padding:10px;
+                border:1px solid blue;
+            }
+        </style>
+    
+    </head>
+    <body>
+        <h1 class="test">Lorem Ipsum Dolor Sit Amet Conse utive Adrenaline</h1>
+
+        <script>
+            var ele1 = document.getElementsByClassName('test');
+            var tempele = ele1[0];
+            //getElementByClassName is an array to get the first element we do [0]
+            tempele.style.backgroundColor='green';
+            tempele.style.border = " 5px dotted purple";
+            tempele.style.fontSize = "40px";
+            tempele.style.display = "none";
+            tempele.style.display = "block"; //Overrides
+        </script>
+
+
+    </body>
+</html>

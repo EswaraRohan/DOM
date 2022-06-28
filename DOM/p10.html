@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Eswara Rohan</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+    </style>
+    </head>
+    <body>
+        <ul>
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+        </ul>
+
+        <script>
+            var ele = document.querySelectorAll('li');
+            for (var x=0;x<ele.length;x++){
+                console.log(ele[x]);
+                ele[x].addEventListener('mouseover',function(){
+                    this.classList.add('red');
+                })
+                ele[x].addEventListener('mouseout',function(){
+                    this.classList.remove('red');
+                })
+            }
+
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,67 @@
+<html>
+<head><title>JavaScript DOM Course</title>
+<style>
+.red{
+    background-color: red;
+    color:brown;
+    text-decoration:line-through;
+}
+.blue{
+    background-color: blue;
+    color:aliceblue;
+}
+.test{
+    margin:10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<ul>
+    <li>My Item</li>
+    <li>Another Item</li>
+    <li>Wow Cool</li>
+    <li>New Color</li>
+</ul>
+<input type="text" name="newItem">
+<button type="button" id="clicker">Click Here </button>
+<script>
+ 
+var mainList = document.querySelector('ul');
+var clicker = document.getElementById('clicker');
+var allListItems = document.querySelectorAll('li');
+
+for (x=0;x<allListItems.length;x++){
+    allListItems[x].addEventListener('click',myList);
+}
+
+function myList(){
+    var temp = this.classList.toggle('red');
+    console.log(temp);
+    if (temp){
+        var span = document.createElement('span');
+        span.textContent = 'x';
+        span.addEventListener('click',function(){
+            this.parentElement.remove();
+        })
+        this.appendChild(span);
+
+    }
+
+    else{
+        this.getElementByTagName('span')[0].remove();
+    }
+}
+ 
+clicker.addEventListener('click',function(){
+    var li = document.createElement('li');
+    var textValue = 'test '+(allListItems .length + 1)
+    var tempNode = document.createTextNode(textValue);
+    li.appendChild(tempNode);
+    mainList.appendChild(li);
+})
+ 
+</script>
+</body>
+</html>

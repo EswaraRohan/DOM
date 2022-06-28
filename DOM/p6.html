@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Eswara Rohan</title>
+        <style>
+
+            .red{
+            background-color:rgb(247, 13, 13);
+            color:rgb(40, 2, 2);
+            }
+
+            .blue{
+                background-color:blue;
+                color:aliceblue;
+            }
+
+            .test{
+                margin:10px;
+                padding:10px;
+                border:1px solid blue;
+            }
+        </style>
+    
+    </head>
+    <body>
+        <a href = "https://placeholder.com"><img src="https://via.placeholder.com/350x150"></a>
+        <img src="https://via.placeholder.com/150x150">
+        <script>
+            var ele1 = document.getElementsByTagName('a');
+            console.log(ele1[0]);
+            var ele2 = document.getElementsByTagName('img');
+            console.log(ele2[1]);
+            var ele3 = ele1[0].getAttribute('href');
+            console.log(ele3);
+            ele1[0].setAttribute('href','https://www.google.co.in/');
+
+            //Exchange Of The Images In The Above.......
+
+            var tempImg1 = ele2[0].getAttribute('src');
+            var tempImg2 = ele2[1].getAttribute('src');
+            ele2[1].setAttribute('src',tempImg1);
+            ele2[0].setAttribute('src',tempImg2);
+        </script>
+    </body>
+</html>

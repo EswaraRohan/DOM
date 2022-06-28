@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eswara Rohan</title>
+        <link rel="icon" href="https://www.google.com/images/branding/product/ico/googleg_alldp.ico"/>
+        <style>
+            .red{
+                background-color: rgb(75, 5, 5);
+                color:white;
+            }    
+        </style>
+    </head>
+
+    <body>
+        <ul>
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+        </ul>
+        <input type="text" name="newItem" text="input">
+        <script>
+            var ele1 = document.querySelector('input[name="newItem"]');
+            ele1.addEventListener('keypress',addItem);
+            var eleUL = document.querySelector('ul');
+            function addItem(event){
+                //console.log(event);
+                if(event.keyCode == 13){
+                    console.log('You Pressed Enter');
+                    eleUL.style.color = 'yellow';
+                }
+                else if(event.keyCode == 115){
+                    console.log('You Have Pressed S');
+                }
+            }
+        </script>
+    </body>
+</html>

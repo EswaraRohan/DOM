@@ -1,0 +1,98 @@
+To get element style values - 
+
+Inline styles - 
+Syntax - selectedElement.style.{inline-style-property}
+
+CSS File - 
+Syntax - window.getComputedStyle(selectedElement).{style-property-name}
+
+
+
+
+
+
+
+Form Events - 
+- Change
+- Focus
+- Blur
+- Submit
+
+
+Change - Triggered when the content of an input field is changed 
+        or when user selects a value from the dropdown
+
+focus - when the input field is focused by the user
+
+blur - Triggered when the input field loses focus
+
+submit- when submit button is clicked
+
+
+
+
+
+
+Keyboard Events - 
+keyup
+keydown
+keypress
+
+keydown - when any key is pressed on the Keyboard
+
+keyup - when any key is released after it's keydown Events
+
+keypress - when any key except shift,function,capslock is in pressed position
+
+
+
+
+addEventListener('keyup',function(e){
+        var keycode = e.keycode;
+        if (keycode == 13){ 
+                //enter keycode is 13
+        }
+})
+
+
+
+
+
+Mouse Events - 
+
+mousedown
+mouseup
+click
+dblclick
+mouseover
+mouseenter
+mousemove
+
+
+mousedown - either left or right or middle mouse key is pressed on the HTML element
+
+mouseup - mouse key released after mousedown Events
+
+click - left mouse button is pressed and released on the same HTML ele.
+
+dblclick - when left mouse is clicked twice on the same HTML element
+
+mouseover - when mouse pointer enters the HTML element and its child elements
+
+mouseenter - when mouse pointer enters the HTML element
+
+mousemove - when mouse pointer is moved over the HTML element
+
+
+
+
+
+adding list item to unordered list - 
+
+document.createTextNode(" ") ----> var1
+document.createElement("li").appendChild(var1)   ---> var2
+document.getElementById("ul").appendChild(var2)
+
+if we want to append at first ->
+
+.insertBefore(newListElement,firstItem)

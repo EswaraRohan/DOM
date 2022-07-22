@@ -1,0 +1,22 @@
+this keyword in JS
+
+In JS, this keyword refers to the current context
+
+this object - always refers to a single object and it is usually used
+inside a function or a method to access properties and methods which
+are a part of the object which is associated with the function.
+
+
+
+E.g.,
+var first = 'rose';
+var person={
+        first:'jack';
+        getname:function(){
+                console.log(first);
+        }
+}
+
+
+Here console prints rose 
+if instead first, there is this.first, then the console prints jack

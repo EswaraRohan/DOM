@@ -1,0 +1,16 @@
+Other events than onclick - 
+
+onmouseover/........
+<h1 onmouseover="alert/////////////
+
+onkeyup/onkeydown/onkeypress
+input type="text" onkeyup="alert(///////////
+
+
+onsubmit 
+<form action="" onsubmit="">
+
+popup boxes in JS - 
+alert
+confirm
+prompt

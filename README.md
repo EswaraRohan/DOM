@@ -6,4 +6,4 @@ When a web page is loaded, the browser creates a document object model of the pa
 It is the tree representation of the HTML document.
 This DOM tree can be modified with the help of JS.
 
-getElementByName
+getElementByName - only work for inout elements
